@@ -19,7 +19,7 @@ body {
 }
 
 .cube.show-front {
-  transform: translateZ(-100px) rotateY(0deg);
+  transform: translateZ(-100px) rotateY(0deg) scale(0.5);
 }
 .cube.show-right {
   transform: translateZ(-100px) rotateY(-90deg);
