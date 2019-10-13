@@ -1,4 +1,5 @@
 import React from 'react';
+import ContactPage from '../ContactPage';
 
 const CubeLayout = () => {
   return (
@@ -7,7 +8,9 @@ const CubeLayout = () => {
       <div className="cube__face cube__face--back">back</div>
       <div className="cube__face cube__face--right">right</div>
       <div className="cube__face cube__face--left">left</div>
-      <div className="cube__face cube__face--top">top</div>
+      <div className="cube__face cube__face--top">
+        <ContactPage />
+      </div>
       <div className="cube__face cube__face--bottom">bottom</div>
     </div>
   );

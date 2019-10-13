@@ -68,7 +68,7 @@ function ResponsiveDrawer(props) {
   var currentClass = '';
 
   const handleClick = e => {
-    e.preventDefault();
+    // e.preventDefault();
     var cube = document.querySelector('.cube');
     var showClass = 'show-' + e.currentTarget.value;
     if (currentClass) {
