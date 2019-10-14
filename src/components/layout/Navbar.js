@@ -68,13 +68,14 @@ function ResponsiveDrawer(props) {
   var currentClass = '';
 
   const handleClick = e => {
-    // e.preventDefault();
+    e.preventDefault();
     var cube = document.querySelector('.cube');
     var showClass = 'show-' + e.currentTarget.value;
     if (currentClass) {
       cube.classList.remove(currentClass);
     }
     cube.classList.add(showClass);
+    console.log(e.currentTarget);
     currentClass = showClass;
   };
 
