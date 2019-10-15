@@ -1,11 +1,16 @@
 * {
   box-sizing: border-box;
 }
+@import url(http://allfont.net/allfont.css?fonts=ostrich-sans-light);
+
+.home {
+  font-family: 'Ostrich Sans Light', arial;
+}
 
 body {
   font-family: sans-serif;
   /* transform: scale3d(0.5, 0.5, 0.5); */
-  overflow: auto;
+  overflow: hidden;
 }
 
 .project-card {
@@ -62,7 +67,11 @@ body {
 }
 
 .cube__face--front {
-  background: hsla(0, 100%, 50%);
+  /* background: hsla(0, 100%, 50%); */
+  background-image: url(./images/computer_desk2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: black;
 }
 .cube__face--right {
   background: hsla(60, 100%, 50%);
@@ -86,6 +95,9 @@ body {
 
 .cube__face--front {
   transform: rotateY(0deg) translateZ(50vw);
+  max-width: 100%;
+  max-height: 100%;
+  overflow: hidden;
 }
 .cube__face--right {
   transform: rotateY(90deg) translateZ(50vw);

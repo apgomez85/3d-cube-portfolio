@@ -1,11 +1,16 @@
 import React from 'react';
 import { Grid } from '@material-ui/core';
 
+const style = {
+  color: 'blue',
+  fontFamily: 'cursive'
+};
+
 export default function HomePage() {
   return (
-    <Grid container>
+    <Grid style={style} container>
       <Grid items sm>
-        Item
+        <h2>Adrian Gomez</h2>
       </Grid>
     </Grid>
   );
