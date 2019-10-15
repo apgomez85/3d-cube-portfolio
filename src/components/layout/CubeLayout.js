@@ -1,11 +1,14 @@
 import React from 'react';
 import ContactPage from '../ContactPage';
 import ProjectsPage from '../ProjectsPage';
+import HomePage from '../HomePage';
 
 const CubeLayout = () => {
   return (
     <div className="cube">
-      <div className="cube__face cube__face--front">front</div>
+      <div className="cube__face cube__face--front">
+        <HomePage />
+      </div>
       <div className="cube__face cube__face--back">
         <ProjectsPage />
       </div>

@@ -18,7 +18,7 @@ export default function ImgMediaCard() {
   const classes = useStyles();
 
   return (
-    <div>
+    <div className="project-page">
       <Card className={[classes.card, 'project-card'].join(' ')}>
         <CardActionArea>
           <CardMedia
