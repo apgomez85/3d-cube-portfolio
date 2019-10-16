@@ -1,10 +1,17 @@
 * {
   box-sizing: border-box;
 }
-@import url(http://allfont.net/allfont.css?fonts=ostrich-sans-light);
 
-.home {
-  font-family: 'Ostrich Sans Light', arial;
+@font-face {
+  font-family: 'ostrich-sans-regular';
+  src: local('ostrich-sans-regular'),
+    url(./fonts/ostrich-sans-regular.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'ostrich-sans-light';
+  src: local('ostrich-sans-light'),
+    url(./fonts/ostrich-sans-light.woff) format('woff');
 }
 
 body {

@@ -1,17 +1,14 @@
 import React from 'react';
-import { Grid } from '@material-ui/core';
 
 const style = {
-  color: 'blue',
-  fontFamily: 'cursive'
+  color: '#6A6C6E',
+  fontFamily: 'ostrich-sans-light'
 };
 
 export default function HomePage() {
   return (
-    <Grid style={style} container>
-      <Grid items sm>
-        <h2>Adrian Gomez</h2>
-      </Grid>
-    </Grid>
+    <div>
+      <h2 style={style}>Adrian Gomez</h2>
+    </div>
   );
 }

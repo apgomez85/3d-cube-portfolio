@@ -26,7 +26,10 @@ const drawerWidth = 240;
 
 const useStyles = makeStyles(theme => ({
   root: {
-    display: 'flex'
+    display: 'flex',
+    color: '#cdcdcd',
+    fontFamily: 'ostrich-sans-regular',
+    justifyContent: 'center'
   },
   drawer: {
     [theme.breakpoints.up('sm')]: {
@@ -87,7 +90,7 @@ function ResponsiveDrawer(props) {
         height="auto"
         width="100%"
       />
-      <h1 className={classes.content}>Web Developer</h1>
+      <h1 className={classes.root}>Web Developer</h1>
       <Divider />
       <List>
         <ListItem
@@ -182,7 +185,7 @@ function ResponsiveDrawer(props) {
           >
             <MenuIcon />
           </IconButton>
-          <Typography variant="h6" noWrap>
+          <Typography className={classes.root} variant="h4" noWrap>
             Adrian Gomez
           </Typography>
         </Toolbar>
