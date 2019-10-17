@@ -20,12 +20,6 @@ body {
   overflow: hidden;
 }
 
-.project-card {
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 70px;
-}
-
 .cube {
   width: 100vw;
   height: 100vh;
@@ -67,37 +61,17 @@ body {
   line-height: 200px;
   font-size: 40px;
   font-weight: bold;
-  color: white;
+  color: black;
   text-align: center;
   overflow: auto;
   backface-visibility: hidden;
 }
 
 .cube__face--front {
-  /* background: hsla(0, 100%, 50%); */
   background-image: url(./images/computer_desk2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   color: black;
-}
-.cube__face--right {
-  background: hsla(60, 100%, 50%);
-}
-.project-page {
-  background: hsla(120, 100%, 50%);
-}
-.cube__face--back {
-  background: hsla(120, 100%, 50%);
-}
-.cube__face--left {
-  background: hsla(180, 100%, 50%);
-}
-.cube__face--top {
-  background: hsla(240, 100%, 50%);
-  text-align: left;
-}
-.cube__face--bottom {
-  background: hsla(300, 100%, 50%);
 }
 
 .cube__face--front {

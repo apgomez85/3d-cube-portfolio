@@ -174,7 +174,11 @@ function ResponsiveDrawer(props) {
   return (
     <div className={classes.root}>
       <CssBaseline />
-      <AppBar position="fixed" className={classes.appBar}>
+      <AppBar
+        style={{ background: '#2F2828' }}
+        position="fixed"
+        className={classes.appBar}
+      >
         <Toolbar>
           <IconButton
             color="inherit"
