@@ -33,7 +33,7 @@ export default function ImgMediaCard() {
             <CardMedia
               component="img"
               alt="Project 1"
-              height="140"
+              // height="140"
               image={require('../images/computer_desk2.jpg')}
               title="Project 1"
             />

@@ -1,30 +1,83 @@
 import React from 'react';
-import Blog1 from '../components/blogentries/Blog1';
-import Blog2 from '../components/blogentries/Blog2';
-import Grid from '@material-ui/core/Grid';
+import { makeStyles } from '@material-ui/core/styles';
+import Card from '@material-ui/core/Card';
+import CardActions from '@material-ui/core/CardActions';
+import CardContent from '@material-ui/core/CardContent';
+import Blog1 from './blogentries/Blog1';
+import Blog2 from './blogentries/Blog2';
+import Typography from '@material-ui/core/Typography';
 
-const style = {
-  display: 'flex',
-  color: '#6A6C6E',
-  fontFamily: 'ostrich-sans-light'
-};
+const useStyles = makeStyles({
+  card: {
+    display: 'flex',
+    justifyContent: 'center',
+    minWidth: 275,
+    marginTop: 50
+  },
+  bullet: {
+    display: 'inline-block',
+    margin: '0 2px',
+    transform: 'scale(0.8)'
+  },
+  title: {
+    fontSize: 14
+  },
+  pos: {
+    marginBottom: 12
+  }
+});
 
-export default function BlogPage() {
+export default function SimpleCard() {
+  const classes = useStyles();
+
   return (
-    <Grid style={style} container spacing={3}>
-      <Grid item xs={12}>
-        <img
-          height="140"
-          width="280"
-          src={require('../images/computer_desk2.jpg')}
-          alt=""
-        />
-        <span>Some Text</span>
-        <Blog1 />
-      </Grid>
-      <Grid item xs={12}>
-        <Blog2 />
-      </Grid>
-    </Grid>
+    <div>
+      <Card className={classes.card}>
+        <CardContent>
+          <Typography variant="h5" component="h2">
+            Title
+          </Typography>
+          <Typography
+            className={classes.title}
+            color="textSecondary"
+            gutterBottom
+          >
+            Date
+          </Typography>
+
+          <Typography variant="body2" component="p">
+            Description
+            <br />
+            {'"a benevolent smile"'}
+          </Typography>
+        </CardContent>
+        <CardActions>
+          <Blog1 />
+        </CardActions>
+      </Card>
+      <Card className={classes.card}>
+        <CardContent>
+          <Typography variant="h5" component="h2">
+            Title
+          </Typography>
+          <Typography
+            className={classes.title}
+            color="textSecondary"
+            gutterBottom
+          >
+            Date
+          </Typography>
+
+          <Typography variant="body2" component="p">
+            Description
+            <br />
+            {'"a benevolent smile"'}
+          </Typography>
+        </CardContent>
+        <CardActions>
+          <Blog2 />
+        </CardActions>
+      </Card>
+    </div>
   );
 }

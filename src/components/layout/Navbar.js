@@ -78,8 +78,12 @@ function ResponsiveDrawer(props) {
       cube.classList.remove(currentClass);
     }
     cube.classList.add(showClass);
-    console.log(e.currentTarget);
+    console.log(cube);
     currentClass = showClass;
+    var x = window.matchMedia('(max-width: 600px)');
+    if (x.matches) {
+      handleDrawerToggle();
+    }
   };
 
   const drawer = (
