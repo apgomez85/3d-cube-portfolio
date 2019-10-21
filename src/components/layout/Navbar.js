@@ -59,31 +59,32 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
+let currentClass = '';
+
 function ResponsiveDrawer(props) {
   const { container } = props;
   const classes = useStyles();
   const theme = useTheme();
   const [mobileOpen, setMobileOpen] = React.useState(false);
 
-  const handleDrawerToggle = () => {
-    setMobileOpen(!mobileOpen);
-  };
-  var currentClass = '';
-
   const handleClick = e => {
     e.preventDefault();
-    var cube = document.querySelector('.cube');
-    var showClass = 'show-' + e.currentTarget.value;
-    console.log(cube.classList);
+    let cube = document.querySelector('.cube');
+    let showClass = 'show-' + e.currentTarget.value;
+    console.log(currentClass);
     if (currentClass) {
       cube.classList.remove(currentClass);
     }
     cube.classList.add(showClass);
     currentClass = showClass;
-    var x = window.matchMedia('(max-width: 600px)');
+    let x = window.matchMedia('(max-width: 600px)');
     if (x.matches) {
       handleDrawerToggle();
     }
+  };
+
+  const handleDrawerToggle = () => {
+    setMobileOpen(!mobileOpen);
   };
 
   const drawer = (

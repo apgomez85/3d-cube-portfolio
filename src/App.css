@@ -110,6 +110,7 @@ label {
     transform: translateZ(-50vw);
     transition: transform 1s;
   }
+
   .cube.show-front {
     transform: translateZ(-50vw) rotateY(0deg);
   }
