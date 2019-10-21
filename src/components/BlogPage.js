@@ -47,8 +47,6 @@ export default function SimpleCard() {
 
           <Typography variant="body2" component="p">
             Description
-            <br />
-            {'"a benevolent smile"'}
           </Typography>
         </CardContent>
         <CardActions>
@@ -70,8 +68,6 @@ export default function SimpleCard() {
 
           <Typography variant="body2" component="p">
             Description
-            <br />
-            {'"a benevolent smile"'}
           </Typography>
         </CardContent>
         <CardActions>

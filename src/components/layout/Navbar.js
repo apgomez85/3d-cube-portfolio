@@ -74,11 +74,11 @@ function ResponsiveDrawer(props) {
     e.preventDefault();
     var cube = document.querySelector('.cube');
     var showClass = 'show-' + e.currentTarget.value;
+    console.log(cube.classList);
     if (currentClass) {
       cube.classList.remove(currentClass);
     }
     cube.classList.add(showClass);
-    console.log(cube);
     currentClass = showClass;
     var x = window.matchMedia('(max-width: 600px)');
     if (x.matches) {
