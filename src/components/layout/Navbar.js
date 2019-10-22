@@ -59,9 +59,9 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-let currentClass = '';
-
 function ResponsiveDrawer(props) {
+  const [currentClass, setCurrentClass] = React.useState('');
+
   const { container } = props;
   const classes = useStyles();
   const theme = useTheme();
@@ -71,12 +71,11 @@ function ResponsiveDrawer(props) {
     e.preventDefault();
     let cube = document.querySelector('.cube');
     let showClass = 'show-' + e.currentTarget.value;
-    console.log(currentClass);
     if (currentClass) {
       cube.classList.remove(currentClass);
     }
     cube.classList.add(showClass);
-    currentClass = showClass;
+    setCurrentClass(showClass);
     let x = window.matchMedia('(max-width: 600px)');
     if (x.matches) {
       handleDrawerToggle();
@@ -195,7 +194,21 @@ function ResponsiveDrawer(props) {
             <MenuIcon />
           </IconButton>
           <Typography className={classes.root} variant="h4" noWrap>
-            Adrian Gomez
+            {currentClass === ''
+              ? 'Home'
+              : currentClass === 'show-front'
+              ? 'Home'
+              : currentClass === 'show-back'
+              ? 'Projects'
+              : currentClass === 'show-left'
+              ? 'Blog'
+              : currentClass === 'show-right'
+              ? 'Resume'
+              : currentClass === 'show-bottom'
+              ? 'Certifications'
+              : currentClass === 'show-top'
+              ? 'Contact'
+              : ''}
           </Typography>
         </Toolbar>
       </AppBar>
