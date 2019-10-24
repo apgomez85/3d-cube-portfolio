@@ -26,8 +26,25 @@ export default function ContactPage() {
 
   const handleSubmitEmail = e => {
     e.preventDefault();
-    console.log(values.name, values.email, values.body);
+
+    var templateParams = {
+      name: values.name,
+      email: values.email,
+      body: values.body
+    };
+
+    window.emailjs
+      .send('default_service', 'portfolio_template_contact', templateParams)
+      .then(
+        function(response) {
+          console.log('SUCCESS!', response.status, response.text);
+        },
+        function(error) {
+          console.log('FAILED...', error);
+        }
+      );
   };
+
   const handleChange = (name, email, body) => event => {
     setValues({
       ...values,
