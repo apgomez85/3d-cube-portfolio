@@ -11,7 +11,7 @@ const style = {
 export default function HomePage() {
   return (
     <div>
-      <Grid justify="center" container="true">
+      <Grid justify="center" container={true}>
         <h2 style={style}>Adrian Gomez</h2>
       </Grid>
     </div>

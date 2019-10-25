@@ -1,9 +1,7 @@
 import React from 'react';
 import FormControl from '@material-ui/core/FormControl';
-// import InputLabel from '@material-ui/core/InputLabel';
-// import Input from '@material-ui/core/Input';
-import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
+import { ValidatorForm, TextValidator } from 'react-material-ui-form-validator';
 
 const style = {
   display: 'flex',
@@ -37,10 +35,23 @@ export default function ContactPage() {
       .send('default_service', 'portfolio_template_contact', templateParams)
       .then(
         function(response) {
-          console.log('SUCCESS!', response.status, response.text);
+          document.getElementById('sent-email').innerHTML =
+            "<span style='font-size:30px'>Email Sent. Thank you!</span>";
+
+          setTimeout(function() {
+            document.getElementById('sent-email').innerHTML = '';
+          }, 5000);
+
+          setValues({
+            ...values,
+            name: '',
+            email: '',
+            body: ''
+          });
         },
         function(error) {
-          console.log('FAILED...', error);
+          document.getElementById('sent-email').innerHTML =
+            "<span style='font-size:30px'>Sorry, there has been an error sending your message.</span>";
         }
       );
   };
@@ -55,46 +66,50 @@ export default function ContactPage() {
   };
 
   return (
-    <FormControl style={style}>
-      <h2>Contact</h2>
-      <TextField
-        id="outlined-name"
-        label="Name"
-        value={values.name}
-        onChange={handleChange('name')}
-        margin="normal"
-        variant="outlined"
-        fullWidth
-      />
-      <TextField
-        id="outlined-email"
-        label="Email"
-        value={values.email}
-        onChange={handleChange('email')}
-        margin="normal"
-        variant="outlined"
-        fullWidth
-      />
-      <TextField
-        id="outlined-body"
-        label="Body"
-        value={values.body}
-        onChange={handleChange('body')}
-        margin="normal"
-        variant="outlined"
-        fullWidth
-        multiline="true"
-        rows={5}
-      />
+    <ValidatorForm onSubmit={handleSubmitEmail}>
+      <FormControl style={style}>
+        <h2 id="title">Contact</h2>
+        <p id="sent-email"></p>
+        <TextValidator
+          id="outlined-name"
+          label="Name"
+          value={values.name}
+          onChange={handleChange('name')}
+          margin="normal"
+          variant="outlined"
+          fullWidth
+          validators={['required']}
+          errorMessages={['This field is required']}
+        />
+        <TextValidator
+          id="outlined-email"
+          label="Email"
+          value={values.email}
+          onChange={handleChange('email')}
+          margin="normal"
+          variant="outlined"
+          fullWidth
+          validators={['required', 'isEmail']}
+          errorMessages={['This field is required', 'email is not valid']}
+        />
+        <TextValidator
+          id="outlined-body"
+          label="Body"
+          value={values.body}
+          onChange={handleChange('body')}
+          margin="normal"
+          variant="outlined"
+          fullWidth
+          multiline="true"
+          rows={5}
+          validators={['required']}
+          errorMessages={['This field is required']}
+        />
 
-      <Button
-        onClick={handleSubmitEmail}
-        variant="outlined"
-        color="primary"
-        size="medium"
-      >
-        Send
-      </Button>
-    </FormControl>
+        <Button type="submit" variant="outlined" color="primary" size="medium">
+          Send
+        </Button>
+      </FormControl>
+    </ValidatorForm>
   );
 }
