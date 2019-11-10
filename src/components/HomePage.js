@@ -12,7 +12,7 @@ export default function HomePage() {
   return (
     <div>
       <Grid justify="center" container={true}>
-        <h2 style={style}>Adrian </h2>
+        <h2 style={style}>Adrian Gomez</h2>
       </Grid>
     </div>
   );
