@@ -31,7 +31,7 @@ export default function MaxWidthDialog() {
       >
         <DialogTitle id="max-width-dialog-title">Blog Title 1</DialogTitle>
         <DialogContent>
-          <DialogContentText>Blog text</DialogContentText>
+          <DialogContentText>Blog Text</DialogContentText>
         </DialogContent>
         <DialogActions>
           <Button onClick={handleClose} color="primary">
