@@ -3,15 +3,15 @@
 }
 
 @font-face {
-  font-family: 'ostrich-sans-regular';
-  src: local('ostrich-sans-regular'),
-    url(./fonts/ostrich-sans-regular.woff) format('woff');
+  font-family: "ostrich-sans-regular";
+  src: local("ostrich-sans-regular"),
+    url(./fonts/ostrich-sans-regular.woff) format("woff");
 }
 
 @font-face {
-  font-family: 'ostrich-sans-light';
-  src: local('ostrich-sans-light'),
-    url(./fonts/ostrich-sans-light.woff) format('woff');
+  font-family: "ostrich-sans-light";
+  src: local("ostrich-sans-light"),
+    url(./fonts/ostrich-sans-light.woff) format("woff");
 }
 
 body {
@@ -71,6 +71,7 @@ body {
   background-image: url(./images/computer_desk2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   color: black;
 }
 
