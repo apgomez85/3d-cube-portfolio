@@ -1,21 +1,20 @@
-import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import Card from '@material-ui/core/Card';
-import CardActionArea from '@material-ui/core/CardActionArea';
-import CardActions from '@material-ui/core/CardActions';
-import CardContent from '@material-ui/core/CardContent';
-import CardMedia from '@material-ui/core/CardMedia';
-import Button from '@material-ui/core/Button';
-import Grid from '@material-ui/core/Grid';
-import Typography from '@material-ui/core/Typography';
+import React from "react";
+import { makeStyles } from "@material-ui/core/styles";
+import Card from "@material-ui/core/Card";
+import CardActions from "@material-ui/core/CardActions";
+import Button from "@material-ui/core/Button";
+import Grid from "@material-ui/core/Grid";
+import Bugtracker from "./projectentries/Bugtracker";
+import GetDev from "./projectentries/GetDev";
+import ChatApp from "./projectentries/ChatApp";
 
 const useStyles = makeStyles({
   card: {
-    display: 'flex',
+    display: "flex",
     maxWidth: 345,
-    marginLeft: 'auto',
-    marginRight: 'auto',
-    marginTop: '60px'
+    marginLeft: "auto",
+    marginRight: "auto",
+    marginTop: "60px"
   }
 });
 
@@ -27,153 +26,79 @@ export default function ImgMediaCard() {
       <Grid sm="10" container="true">
         <Card
           raised="true"
-          className={[classes.card, 'project-card'].join(' ')}
+          className={[classes.card, "project-card"].join(" ")}
         >
-          <CardActionArea>
-            <CardMedia
-              component="img"
-              alt="Project 1"
-              // height="140"
-              image={require('../images/computer_desk2.jpg')}
-              title="Project 1"
-            />
-            <CardContent>
-              <Typography gutterBottom variant="h5" component="h2">
-                Project 1
-              </Typography>
-              <Typography variant="body2" color="textSecondary" component="p">
-                Project 1 description
-              </Typography>
-            </CardContent>
-          </CardActionArea>
+          <Bugtracker />
           <CardActions>
             <Button size="small" color="primary">
-              GitHub
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://github.com/apgomez85/BugTracker"
+              >
+                GitHub
+              </a>
             </Button>
             <Button size="small" color="primary">
-              Live
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://bugtracker.adrianindevelopment.com"
+              >
+                Live
+              </a>
             </Button>
           </CardActions>
         </Card>
         <Card
           raised="true"
-          className={[classes.card, 'project-card'].join(' ')}
+          className={[classes.card, "project-card"].join(" ")}
         >
-          <CardActionArea>
-            <CardMedia
-              component="img"
-              alt="Project 1"
-              height="140"
-              image={require('../images/computer_desk2.jpg')}
-              title="Project 1"
-            />
-            <CardContent>
-              <Typography gutterBottom variant="h5" component="h2">
-                Project 1
-              </Typography>
-              <Typography variant="body2" color="textSecondary" component="p">
-                Project 1 description
-              </Typography>
-            </CardContent>
-          </CardActionArea>
+          <GetDev />
           <CardActions>
             <Button size="small" color="primary">
-              GitHub
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://github.com/apgomez85/get-dev-app"
+              >
+                GitHub
+              </a>
             </Button>
             <Button size="small" color="primary">
-              Live
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://get-dev.adrianindevelopment.com"
+              >
+                Live
+              </a>
             </Button>
           </CardActions>
         </Card>
         <Card
           raised="true"
-          className={[classes.card, 'project-card'].join(' ')}
+          className={[classes.card, "project-card"].join(" ")}
         >
-          <CardActionArea>
-            <CardMedia
-              component="img"
-              alt="Project 1"
-              height="140"
-              image={require('../images/computer_desk2.jpg')}
-              title="Project 1"
-            />
-            <CardContent>
-              <Typography gutterBottom variant="h5" component="h2">
-                Project 1
-              </Typography>
-              <Typography variant="body2" color="textSecondary" component="p">
-                Project 1 description
-              </Typography>
-            </CardContent>
-          </CardActionArea>
+          <ChatApp />
           <CardActions>
             <Button size="small" color="primary">
-              GitHub
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://github.com/apgomez85/chat-app"
+              >
+                GitHub
+              </a>
             </Button>
             <Button size="small" color="primary">
-              Live
-            </Button>
-          </CardActions>
-        </Card>
-      </Grid>
-      <Grid sm="10" container="true">
-        <Card
-          raised="true"
-          className={[classes.card, 'project-card'].join(' ')}
-        >
-          <CardActionArea>
-            <CardMedia
-              component="img"
-              alt="Project 1"
-              height="140"
-              image={require('../images/computer_desk2.jpg')}
-              title="Project 1"
-            />
-            <CardContent>
-              <Typography gutterBottom variant="h5" component="h2">
-                Project 1
-              </Typography>
-              <Typography variant="body2" color="textSecondary" component="p">
-                Project 1 description
-              </Typography>
-            </CardContent>
-          </CardActionArea>
-          <CardActions>
-            <Button size="small" color="primary">
-              GitHub
-            </Button>
-            <Button size="small" color="primary">
-              Live
-            </Button>
-          </CardActions>
-        </Card>
-        <Card
-          raised="true"
-          className={[classes.card, 'project-card'].join(' ')}
-        >
-          <CardActionArea>
-            <CardMedia
-              component="img"
-              alt="Project 1"
-              height="140"
-              image={require('../images/computer_desk2.jpg')}
-              title="Project 1"
-            />
-            <CardContent>
-              <Typography gutterBottom variant="h5" component="h2">
-                Project 1
-              </Typography>
-              <Typography variant="body2" color="textSecondary" component="p">
-                Project 1 description
-              </Typography>
-            </CardContent>
-          </CardActionArea>
-          <CardActions>
-            <Button size="small" color="primary">
-              GitHub
-            </Button>
-            <Button size="small" color="primary">
-              Live
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://chat-app.adrianindevelopment.com"
+              >
+                Live
+              </a>
             </Button>
           </CardActions>
         </Card>

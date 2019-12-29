@@ -1,8 +1,9 @@
-import React from 'react';
-import ContactPage from '../ContactPage';
-import ProjectsPage from '../ProjectsPage';
-import HomePage from '../HomePage';
-import BlogPage from '../BlogPage';
+import React from "react";
+import ContactPage from "../ContactPage";
+import ProjectsPage from "../ProjectsPage";
+import HomePage from "../HomePage";
+import BlogPage from "../BlogPage";
+import ResumePage from "../ResumePage";
 
 const CubeLayout = () => {
   return (
@@ -13,7 +14,9 @@ const CubeLayout = () => {
       <div className="cube__face cube__face--back">
         <ProjectsPage />
       </div>
-      <div className="cube__face cube__face--right">right</div>
+      <div className="cube__face cube__face--right">
+        <ResumePage />
+      </div>
       <div className="cube__face cube__face--left">
         <BlogPage />
       </div>
