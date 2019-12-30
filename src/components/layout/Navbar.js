@@ -1,52 +1,52 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import AccountBoxIcon from '@material-ui/icons/AccountBox';
-import AppBar from '@material-ui/core/AppBar';
-import AssignmentIcon from '@material-ui/icons/Assignment';
-import ChatIcon from '@material-ui/icons/Chat';
-import ClassIcon from '@material-ui/icons/Class';
-import ComputerIcon from '@material-ui/icons/Computer';
-import CssBaseline from '@material-ui/core/CssBaseline';
-import Divider from '@material-ui/core/Divider';
-import Drawer from '@material-ui/core/Drawer';
-import Hidden from '@material-ui/core/Hidden';
-import IconButton from '@material-ui/core/IconButton';
-import List from '@material-ui/core/List';
-import ListItem from '@material-ui/core/ListItem';
-import ListItemIcon from '@material-ui/core/ListItemIcon';
-import ListItemText from '@material-ui/core/ListItemText';
-import MailIcon from '@material-ui/icons/Mail';
-import MenuIcon from '@material-ui/icons/Menu';
-import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
-import { makeStyles, useTheme } from '@material-ui/core/styles';
-import CubeLayout from './CubeLayout';
+import React from "react";
+import PropTypes from "prop-types";
+import AccountBoxIcon from "@material-ui/icons/AccountBox";
+import AppBar from "@material-ui/core/AppBar";
+import AssignmentIcon from "@material-ui/icons/Assignment";
+import ChatIcon from "@material-ui/icons/Chat";
+import HomeIcon from "@material-ui/icons/Home";
+import ComputerIcon from "@material-ui/icons/Computer";
+import CssBaseline from "@material-ui/core/CssBaseline";
+import Divider from "@material-ui/core/Divider";
+import Drawer from "@material-ui/core/Drawer";
+import Hidden from "@material-ui/core/Hidden";
+import IconButton from "@material-ui/core/IconButton";
+import List from "@material-ui/core/List";
+import ListItem from "@material-ui/core/ListItem";
+import ListItemIcon from "@material-ui/core/ListItemIcon";
+import ListItemText from "@material-ui/core/ListItemText";
+import MailIcon from "@material-ui/icons/Mail";
+import MenuIcon from "@material-ui/icons/Menu";
+import Toolbar from "@material-ui/core/Toolbar";
+import Typography from "@material-ui/core/Typography";
+import { makeStyles, useTheme } from "@material-ui/core/styles";
+import CubeLayout from "./CubeLayout";
 
 const drawerWidth = 240;
 
 const useStyles = makeStyles(theme => ({
   root: {
-    display: 'flex',
-    color: '#b8b6b6',
-    fontFamily: 'ostrich-sans-regular',
-    justifyContent: 'center'
+    display: "flex",
+    color: "#b8b6b6",
+    fontFamily: "ostrich-sans-regular",
+    justifyContent: "center"
   },
   drawer: {
-    [theme.breakpoints.up('sm')]: {
+    [theme.breakpoints.up("sm")]: {
       width: drawerWidth,
       flexShrink: 0
     }
   },
   appBar: {
     marginLeft: drawerWidth,
-    [theme.breakpoints.up('sm')]: {
+    [theme.breakpoints.up("sm")]: {
       width: `calc(100% - ${drawerWidth}px)`
     }
   },
   menuButton: {
     marginRight: theme.spacing(2),
-    [theme.breakpoints.up('sm')]: {
-      display: 'none'
+    [theme.breakpoints.up("sm")]: {
+      display: "none"
     }
   },
   toolbar: theme.mixins.toolbar,
@@ -60,7 +60,7 @@ const useStyles = makeStyles(theme => ({
 }));
 
 function ResponsiveDrawer(props) {
-  const [currentClass, setCurrentClass] = React.useState('');
+  const [currentClass, setCurrentClass] = React.useState("");
 
   const { container } = props;
   const classes = useStyles();
@@ -69,14 +69,14 @@ function ResponsiveDrawer(props) {
 
   const handleClick = e => {
     e.preventDefault();
-    let cube = document.querySelector('.cube');
-    let showClass = 'show-' + e.currentTarget.value;
+    let cube = document.querySelector(".cube");
+    let showClass = "show-" + e.currentTarget.value;
     if (currentClass) {
       cube.classList.remove(currentClass);
     }
     cube.classList.add(showClass);
     setCurrentClass(showClass);
-    let x = window.matchMedia('(max-width: 600px)');
+    let x = window.matchMedia("(max-width: 600px)");
     if (x.matches) {
       handleDrawerToggle();
     }
@@ -89,7 +89,7 @@ function ResponsiveDrawer(props) {
   const drawer = (
     <div>
       <img
-        src={require('../../images/profile_pic.jpg')}
+        src={require("../../images/profile_pic.jpg")}
         alt="profile_pic"
         height="auto"
         width="100%"
@@ -102,12 +102,12 @@ function ResponsiveDrawer(props) {
           value="front"
           component="button"
           button
-          key={'Home'}
+          key={"Home"}
         >
           <ListItemIcon>
-            <AccountBoxIcon />
+            <HomeIcon />
           </ListItemIcon>
-          <ListItemText primary={'Home'} />
+          <ListItemText primary={"Home"} />
         </ListItem>
 
         <ListItem
@@ -115,60 +115,60 @@ function ResponsiveDrawer(props) {
           value="back"
           component="button"
           button
-          key={'Projects'}
+          key={"Projects"}
         >
           <ListItemIcon>
             <ComputerIcon />
           </ListItemIcon>
-          <ListItemText primary={'Projects'} />
+          <ListItemText primary={"Projects"} />
         </ListItem>
         <ListItem
           onClick={handleClick}
           value="right"
           component="button"
           button
-          key={'Resume'}
+          key={"Resume"}
         >
           <ListItemIcon>
             <AssignmentIcon />
           </ListItemIcon>
-          <ListItemText primary={'Resume'} />
+          <ListItemText primary={"Resume"} />
         </ListItem>
         <ListItem
           onClick={handleClick}
           value="left"
           component="button"
           button
-          key={'Blog'}
+          key={"Blog"}
         >
           <ListItemIcon>
             <ChatIcon />
           </ListItemIcon>
-          <ListItemText primary={'Blog'} />
+          <ListItemText primary={"Blog"} />
         </ListItem>
         <ListItem
           onClick={handleClick}
           value="top"
           component="button"
           button
-          key={'Contact'}
+          key={"Contact"}
         >
           <ListItemIcon>
             <MailIcon />
           </ListItemIcon>
-          <ListItemText primary={'Contact'} />
+          <ListItemText primary={"Contact"} />
         </ListItem>
         <ListItem
           onClick={handleClick}
           value="bottom"
           component="button"
           button
-          key={'Certifications'}
+          key={"About"}
         >
           <ListItemIcon>
-            <ClassIcon />
+            <AccountBoxIcon />
           </ListItemIcon>
-          <ListItemText primary={'Certifications'} />
+          <ListItemText primary={"About"} />
         </ListItem>
       </List>
       <Divider />
@@ -179,7 +179,7 @@ function ResponsiveDrawer(props) {
     <div className={classes.root}>
       <CssBaseline />
       <AppBar
-        style={{ background: '#2F2828' }}
+        style={{ background: "#2F2828" }}
         position="fixed"
         className={classes.appBar}
       >
@@ -194,21 +194,21 @@ function ResponsiveDrawer(props) {
             <MenuIcon />
           </IconButton>
           <Typography className={classes.root} variant="h4" noWrap>
-            {currentClass === ''
-              ? 'Home'
-              : currentClass === 'show-front'
-              ? 'Home'
-              : currentClass === 'show-back'
-              ? 'Projects'
-              : currentClass === 'show-left'
-              ? 'Blog'
-              : currentClass === 'show-right'
-              ? 'Resume'
-              : currentClass === 'show-bottom'
-              ? 'Certifications'
-              : currentClass === 'show-top'
-              ? 'Contact'
-              : ''}
+            {currentClass === ""
+              ? "Home"
+              : currentClass === "show-front"
+              ? "Home"
+              : currentClass === "show-back"
+              ? "Projects"
+              : currentClass === "show-left"
+              ? "Blog"
+              : currentClass === "show-right"
+              ? "Resume"
+              : currentClass === "show-bottom"
+              ? "About"
+              : currentClass === "show-top"
+              ? "Contact"
+              : ""}
           </Typography>
         </Toolbar>
       </AppBar>
@@ -217,7 +217,7 @@ function ResponsiveDrawer(props) {
           <Drawer
             container={container}
             variant="temporary"
-            anchor={theme.direction === 'rtl' ? 'right' : 'left'}
+            anchor={theme.direction === "rtl" ? "right" : "left"}
             open={mobileOpen}
             onClose={handleDrawerToggle}
             classes={{
@@ -249,7 +249,7 @@ function ResponsiveDrawer(props) {
 
 ResponsiveDrawer.propTypes = {
   container: PropTypes.instanceOf(
-    typeof Element === 'undefined' ? Object : Element
+    typeof Element === "undefined" ? Object : Element
   )
 };
 

@@ -4,6 +4,7 @@ import ProjectsPage from "../ProjectsPage";
 import HomePage from "../HomePage";
 import BlogPage from "../BlogPage";
 import ResumePage from "../ResumePage";
+import AboutPage from "../AboutPage";
 
 const CubeLayout = () => {
   return (
@@ -23,7 +24,9 @@ const CubeLayout = () => {
       <div className="cube__face cube__face--top">
         <ContactPage />
       </div>
-      <div className="cube__face cube__face--bottom">bottom</div>
+      <div className="cube__face cube__face--bottom">
+        <AboutPage />
+      </div>
     </div>
   );
 };
