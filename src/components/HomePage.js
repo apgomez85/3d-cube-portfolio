@@ -6,9 +6,9 @@ const style = {
   color: "#6A6C6E",
   fontFamily: "ostrich-sans-light",
   lineHeight: "1",
-  fontSize: "2.5rem",
+  fontSize: "2rem",
   background: "rgba(244,244,246, 0.9)",
-  marginTop: "50px"
+  marginTop: "60px"
 };
 
 export default function HomePage() {
