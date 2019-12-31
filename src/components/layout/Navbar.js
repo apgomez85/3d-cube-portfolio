@@ -89,10 +89,7 @@ function ResponsiveDrawer(props) {
   const drawer = (
     <div
       style={{
-        marginBottom: "none",
-        paddingBottom: "none",
-        fontSize: ".75rem",
-        overflow: "auto"
+        fontSize: ".75rem"
       }}
     >
       <img
