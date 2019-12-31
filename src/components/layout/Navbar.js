@@ -89,7 +89,6 @@ function ResponsiveDrawer(props) {
   const drawer = (
     <div
       style={{
-        fontSize: ".75rem",
         overflowY: "auto"
       }}
     >
@@ -101,7 +100,7 @@ function ResponsiveDrawer(props) {
       />
       <h1 className={classes.root}>Web Developer</h1>
       <Divider />
-      <List>
+      <List style={{ overflow: "auto" }}>
         <ListItem
           onClick={handleClick}
           value="front"

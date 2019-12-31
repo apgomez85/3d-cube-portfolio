@@ -2,6 +2,11 @@
   box-sizing: border-box;
 }
 
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
 @font-face {
   font-family: "ostrich-sans-regular";
   src: local("ostrich-sans-regular"),
@@ -16,7 +21,6 @@
 
 body {
   font-family: sans-serif;
-  /* transform: scale3d(0.5, 0.5, 0.5); */
   overflow: hidden;
 }
 
