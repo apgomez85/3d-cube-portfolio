@@ -91,7 +91,8 @@ function ResponsiveDrawer(props) {
       style={{
         marginBottom: "none",
         paddingBottom: "none",
-        fontSize: ".75rem"
+        fontSize: ".75rem",
+        overflow: "auto"
       }}
     >
       <img
