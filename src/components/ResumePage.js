@@ -23,7 +23,7 @@ export default function ResumePage() {
           Download
         </button>
       </a>
-      <div></div>
+
       <div>
         <img
           src={require("../images/Resume.png")}

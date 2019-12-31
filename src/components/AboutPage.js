@@ -10,7 +10,8 @@ const style = {
   flexDirection: "column",
   maxWidth: "50%",
   margin: "auto",
-  marginLeft: "80px"
+  marginLeft: "80px",
+  backfaceVisibility: "hidden"
 };
 
 export default function AboutPage() {
@@ -24,6 +25,42 @@ export default function AboutPage() {
         and bytes in between, but will gladly explore other avenues. Similar to
         the tech world, I am always in development.
       </p>
+      <div>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://www.linkedin.com/in/adrianindevelopment/"
+          style={{ maxWidth: 40, margin: "auto" }}
+        >
+          <img
+            src={require("../images/icons/linkedin.svg")}
+            alt=""
+            style={{
+              width: 40,
+              height: 30,
+              margin: 0,
+              padding: 0
+            }}
+          />
+        </a>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://www.github.com/apgomez85/"
+          style={{ maxWidth: 40, margin: "auto" }}
+        >
+          <img
+            src={require("../images/icons/github-icon.svg")}
+            alt=""
+            style={{
+              width: 40,
+              height: 30,
+              margin: 0,
+              padding: 0
+            }}
+          />
+        </a>
+      </div>
     </div>
   );
 }
