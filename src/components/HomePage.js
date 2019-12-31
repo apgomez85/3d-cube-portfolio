@@ -8,7 +8,7 @@ const style = {
   lineHeight: "1",
   fontSize: "2.5rem",
   background: "rgba(244,244,246, 0.9)",
-  marginTop: "60px"
+  marginTop: "50px"
 };
 
 export default function HomePage() {
