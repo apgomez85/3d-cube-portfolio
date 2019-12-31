@@ -22,7 +22,7 @@ import Typography from "@material-ui/core/Typography";
 import { makeStyles, useTheme } from "@material-ui/core/styles";
 import CubeLayout from "./CubeLayout";
 
-const drawerWidth = 235;
+const drawerWidth = 225;
 
 const useStyles = makeStyles(theme => ({
   root: {
