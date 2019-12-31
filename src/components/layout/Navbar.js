@@ -87,7 +87,7 @@ function ResponsiveDrawer(props) {
   };
 
   const drawer = (
-    <div style={{ overflow: "auto" }}>
+    <div style={{ maxHeight: "100%" }}>
       <img
         src={require("../../images/profile_pic.jpg")}
         alt="profile_pic"
