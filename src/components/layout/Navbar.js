@@ -89,7 +89,7 @@ function ResponsiveDrawer(props) {
   const drawer = (
     <div
       style={{
-        fontSize: ".75rem",
+        fontSize: ".50rem",
         overflowY: "auto"
       }}
     >
