@@ -22,7 +22,7 @@ import Typography from "@material-ui/core/Typography";
 import { makeStyles, useTheme } from "@material-ui/core/styles";
 import CubeLayout from "./CubeLayout";
 
-const drawerWidth = 225;
+const drawerWidth = 240;
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -213,7 +213,7 @@ function ResponsiveDrawer(props) {
         </Toolbar>
       </AppBar>
       <nav className={classes.drawer} aria-label="mailbox folders">
-        <Hidden mdUp implementation="css">
+        <Hidden xsUp implementation="css">
           <Drawer
             container={container}
             variant="temporary"
