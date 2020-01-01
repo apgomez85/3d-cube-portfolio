@@ -68,7 +68,9 @@ export default function ContactPage() {
   return (
     <ValidatorForm onSubmit={handleSubmitEmail}>
       <FormControl style={style}>
-        <h2 id="title">Contact</h2>
+        <h2 id="title" style={{ marginBottom: 0 }}>
+          Contact
+        </h2>
         <p id="sent-email"></p>
         <TextValidator
           id="outlined-name"
