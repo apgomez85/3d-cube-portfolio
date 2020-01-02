@@ -41,6 +41,27 @@ export default function SimpleCard() {
       <Card className={classes.card}>
         <CardContent>
           <Typography variant="h5" component="h2">
+            Coding, Meetups and Coffee
+          </Typography>
+          <Typography
+            className={classes.title}
+            color="textSecondary"
+            gutterBottom
+          >
+            January 2, 2020
+          </Typography>
+
+          <Typography variant="body2" component="p">
+            Thoughts from hosting a meetup for two years.
+          </Typography>
+        </CardContent>
+        <CardActions>
+          <Blog2 />
+        </CardActions>
+      </Card>
+      <Card className={classes.card}>
+        <CardContent>
+          <Typography variant="h5" component="h2">
             The Lessons Music Taught Me For Coding
           </Typography>
           <Typography
@@ -57,27 +78,6 @@ export default function SimpleCard() {
         </CardContent>
         <CardActions>
           <Blog1 />
-        </CardActions>
-      </Card>
-      <Card className={classes.card}>
-        <CardContent>
-          <Typography variant="h5" component="h2">
-            Title
-          </Typography>
-          <Typography
-            className={classes.title}
-            color="textSecondary"
-            gutterBottom
-          >
-            Date
-          </Typography>
-
-          <Typography variant="body2" component="p">
-            Description
-          </Typography>
-        </CardContent>
-        <CardActions>
-          <Blog2 />
         </CardActions>
       </Card>
     </div>
