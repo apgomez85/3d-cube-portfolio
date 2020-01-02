@@ -70,9 +70,9 @@ export default function MaxWidthDialog() {
             After that I tried group projects trying to build a web app with a
             shared github. Now the thing you have to know about the meetup world
             is that attendance and repeat attendees are not exactly reliable. So
-            needles to say, this was not very successful. There was on
+            needles to say, this was not very successful. There was one
             tic-tac-toe app that was completed between one other person and
-            myself and that's it.
+            myself, that's it.
             <br />
             <br />
             Scrapping that idea, I tried short tutorials. Simple things like
@@ -94,9 +94,9 @@ export default function MaxWidthDialog() {
             try my best to give them an answer and guidance. If I don't know, we
             would research it together. Over time, I've developed a good idea
             for the directions people can take and I try to advice people the
-            best I can. If someone with more experience come to the meetup, they
-            can share in their experience as well. We discuss our goals, tips
-            and stories of how we got were we are. It is always humbling.
+            best I can. If someone with more experience comes to the meetup,
+            they can share in their experience as well. We discuss our goals,
+            tips and stories of how we got were we are. It is always humbling.
             <br />
             <br />
             I've met many people from different backgrounds and skills. There
