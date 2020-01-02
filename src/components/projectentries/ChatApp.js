@@ -29,6 +29,7 @@ export default function MaxWidthDialog() {
           alt="ChatApp"
           image={require("../../images/project-pics/chat-app.PNG")}
           title="ChatApp"
+          style={{ borderStyle: "ridge" }}
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
@@ -39,8 +40,8 @@ export default function MaxWidthDialog() {
               src={require("../../images/icons/nodejs-icon.svg")}
               alt=""
               style={{
-                width: 40,
-                height: 30
+                width: 60,
+                height: 40
               }}
             />
           </Typography>
@@ -66,7 +67,8 @@ export default function MaxWidthDialog() {
               alt=""
               style={{
                 width: 425,
-                height: 250
+                height: 250,
+                borderStyle: "ridge"
               }}
             />
           </DialogContentText>

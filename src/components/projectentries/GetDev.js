@@ -29,6 +29,7 @@ export default function MaxWidthDialog() {
           alt="Get-Dev"
           image={require("../../images/project-pics/get-dev.PNG")}
           title="Get-Dev"
+          style={{ borderStyle: "ridge" }}
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
@@ -93,7 +94,8 @@ export default function MaxWidthDialog() {
               alt=""
               style={{
                 width: 425,
-                height: 250
+                height: 250,
+                borderStyle: "ridge"
               }}
             />
           </DialogContentText>
