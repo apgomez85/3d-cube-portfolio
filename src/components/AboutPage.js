@@ -4,7 +4,7 @@ const style = {
   display: "flex",
   color: "#6A6C6E",
   fontFamily: "ostrich-sans-light",
-  lineHeight: "1",
+  lineHeight: "1.25",
   fontSize: "2.5rem",
   marginTop: "60px",
   flexDirection: "column",
@@ -17,8 +17,8 @@ const style = {
 export default function AboutPage() {
   return (
     <div style={style}>
-      <h1>About Me</h1>
-      <p>
+      <h1 className="about__title">About Me</h1>
+      <p className="about__paragraph">
         I'm Adrian Gomez, a Web Developer based in Southern California. I have
         found my passion in web development and design. I love tech and problem
         solving in all aspects. I specialize in the MERN stack and all the bits

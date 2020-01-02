@@ -133,4 +133,15 @@ label {
   .cube.show-bottom {
     transform: translateZ(-50vh) rotateX(90deg);
   }
+
+  .about__title {
+    margin-top: 65px;
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  .about__paragraph {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    margin-top: 0;
+  }
 }
