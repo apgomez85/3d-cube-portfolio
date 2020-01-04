@@ -54,7 +54,7 @@ export default function ImgMediaCard() {
           raised="true"
           className={[classes.card, "project-card"].join(" ")}
         >
-          <GetDev style={{ zIndex: "100" }} />
+          <GetDev />
           <CardActions>
             <Button size="small" color="primary">
               <a
