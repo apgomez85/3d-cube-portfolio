@@ -4,7 +4,7 @@ import Grid from "@material-ui/core/Grid";
 const style = {
   display: "flex",
   color: "#6A6C6E",
-  fontFamily: "ostrich-sans-light",
+  fontFamily: "ostrich-sans-regular",
   lineHeight: "1",
   fontSize: "2rem",
   background: "rgba(244,244,246, 0.9)",

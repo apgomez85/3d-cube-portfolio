@@ -6,7 +6,7 @@ import { ValidatorForm, TextValidator } from "react-material-ui-form-validator";
 const style = {
   display: "flex",
   color: "#6A6C6E",
-  fontFamily: "ostrich-sans-light",
+  fontFamily: "ostrich-sans-regular",
   lineHeight: "1.25",
   alignItems: "center",
   justifyItems: "center",
