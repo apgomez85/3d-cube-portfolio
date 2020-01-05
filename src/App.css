@@ -19,8 +19,13 @@
     url(./fonts/ostrich-sans-light.woff) format("woff");
 }
 
+@font-face {
+  font-family: "Roboto-light";
+  src: local("Roboto-light"), url(./fonts/Roboto-Light.ttf) format("woff");
+}
+
 body {
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
   overflow: hidden;
 }
 
@@ -76,7 +81,7 @@ body {
   max-width: 100%;
   max-height: 100%;
   overflow: hidden;
-  background-image: url(./images/computer_desk2.jpg);
+  background-image: url("./images/computer_desk2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

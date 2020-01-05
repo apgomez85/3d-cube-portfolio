@@ -36,39 +36,7 @@ export default function MaxWidthDialog() {
             Bugtracker
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
-            <img
-              src={require("../../images/icons/mongodb.svg")}
-              alt=""
-              style={{
-                width: 60,
-                height: 40
-              }}
-            />
-            <img
-              src={require("../../images/icons/expressjs.svg")}
-              alt=""
-              style={{
-                width: 40,
-                height: 25
-              }}
-            />
-            <br />
-            <img
-              src={require("../../images/icons/reactjs-icon.svg")}
-              alt=""
-              style={{
-                width: 40,
-                height: 30
-              }}
-            />
-            <img
-              src={require("../../images/icons/nodejs-icon.svg")}
-              alt=""
-              style={{
-                width: 40,
-                height: 30
-              }}
-            />
+            Click Here For Project Summary
           </Typography>
         </CardContent>
       </CardActionArea>
@@ -82,6 +50,32 @@ export default function MaxWidthDialog() {
         <DialogTitle id="max-width-dialog-title">Bugtracker</DialogTitle>
         <DialogContent>
           <DialogContentText>
+            <img src={require("../../images/icons/mongodb.svg")} alt="" />
+            <img
+              src={require("../../images/icons/expressjs.svg")}
+              alt=""
+              style={{
+                width: 75,
+                height: 50
+              }}
+            />
+            <img
+              src={require("../../images/icons/reactjs-icon.svg")}
+              alt=""
+              style={{
+                width: 60,
+                height: 40
+              }}
+            />
+            <img
+              src={require("../../images/icons/nodejs-icon.svg")}
+              alt=""
+              style={{
+                width: 60,
+                height: 40
+              }}
+            />
+            <br />
             A fullstack app using the MERN stack. With this app you can register
             bugs to fix in your project. Assign them to a particular user and
             group. Only users with admin privilages can modify users and delete

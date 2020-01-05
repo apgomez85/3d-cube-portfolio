@@ -36,14 +36,7 @@ export default function MaxWidthDialog() {
             Chat App
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
-            <img
-              src={require("../../images/icons/nodejs-icon.svg")}
-              alt=""
-              style={{
-                width: 60,
-                height: 40
-              }}
-            />
+            Click Here For Project Summary
           </Typography>
         </CardContent>
       </CardActionArea>
@@ -57,6 +50,15 @@ export default function MaxWidthDialog() {
         <DialogTitle id="max-width-dialog-title">Chat App</DialogTitle>
         <DialogContent>
           <DialogContentText>
+            <img
+              src={require("../../images/icons/nodejs-icon.svg")}
+              alt=""
+              style={{
+                width: 60,
+                height: 40
+              }}
+            />
+            <br />
             A Node JS application using socket.io to create rooms and chat with
             other people. Inludes filter for bad language and the ability to
             share your location.

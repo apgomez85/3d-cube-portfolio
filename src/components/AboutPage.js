@@ -3,7 +3,7 @@ import React from "react";
 const style = {
   display: "flex",
   color: "#6A6C6E",
-  fontFamily: "ostrich-sans-regular",
+  fontFamily: "Roboto-light",
   lineHeight: "1.25",
   fontSize: "2.5rem",
   marginTop: "60px",

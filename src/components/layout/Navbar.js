@@ -27,8 +27,8 @@ const drawerWidth = 240;
 const useStyles = makeStyles(theme => ({
   root: {
     display: "flex",
-    // color: "#b8b6b6",
-    fontFamily: "ostrich-sans-regular",
+    color: "#BCB2B2",
+    fontFamily: "Roboto-light",
     justifyContent: "center"
   },
   drawer: {

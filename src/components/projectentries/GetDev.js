@@ -36,39 +36,7 @@ export default function MaxWidthDialog() {
             Get-Dev
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
-            <img
-              src={require("../../images/icons/mongodb.svg")}
-              alt=""
-              style={{
-                width: 60,
-                height: 40
-              }}
-            />
-            <img
-              src={require("../../images/icons/expressjs.svg")}
-              alt=""
-              style={{
-                width: 40,
-                height: 25
-              }}
-            />
-            <br />
-            <img
-              src={require("../../images/icons/reactjs-icon.svg")}
-              alt=""
-              style={{
-                width: 40,
-                height: 30
-              }}
-            />
-            <img
-              src={require("../../images/icons/nodejs-icon.svg")}
-              alt=""
-              style={{
-                width: 40,
-                height: 30
-              }}
-            />
+            Click Here For Project Summary
           </Typography>
         </CardContent>
       </CardActionArea>
@@ -82,6 +50,32 @@ export default function MaxWidthDialog() {
         <DialogTitle id="max-width-dialog-title">Get-Dev</DialogTitle>
         <DialogContent>
           <DialogContentText>
+            <img src={require("../../images/icons/mongodb.svg")} alt="" />
+            <img
+              src={require("../../images/icons/expressjs.svg")}
+              alt=""
+              style={{
+                width: 75,
+                height: 50
+              }}
+            />
+            <img
+              src={require("../../images/icons/reactjs-icon.svg")}
+              alt=""
+              style={{
+                width: 60,
+                height: 40
+              }}
+            />
+            <img
+              src={require("../../images/icons/nodejs-icon.svg")}
+              alt=""
+              style={{
+                width: 60,
+                height: 40
+              }}
+            />
+            <br />
             A fullstack app using the MERN stack. A social media app for web
             developers. Users are able to make an account that lists their
             skills, education and work experience. It is possible to write a
