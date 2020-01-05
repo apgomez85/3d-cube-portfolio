@@ -5,7 +5,7 @@ const style = {
   color: "#6A6C6E",
   fontFamily: "Roboto-light",
   lineHeight: "1.25",
-  fontSize: "2.5rem",
+  fontSize: "2rem",
   marginTop: "60px",
   flexDirection: "column",
   maxWidth: "50%",
