@@ -7,6 +7,8 @@ import Grid from "@material-ui/core/Grid";
 import Bugtracker from "./projectentries/Bugtracker";
 import GetDev from "./projectentries/GetDev";
 import ChatApp from "./projectentries/ChatApp";
+import ElenaJoy from "./projectentries/ElenaJoy";
+import Portfolio from "./projectentries/Portfolio";
 
 const useStyles = makeStyles({
   card: {
@@ -23,7 +25,7 @@ export default function ImgMediaCard() {
 
   return (
     <div>
-      <Grid sm="10" container="true">
+      <Grid sm="9" container="true">
         <Card
           raised="true"
           className={[classes.card, "project-card"].join(" ")}
@@ -98,6 +100,49 @@ export default function ImgMediaCard() {
                 href="https://chat-app.adrianindevelopment.com"
               >
                 Live
+              </a>
+            </Button>
+          </CardActions>
+        </Card>
+        <Card
+          raised="true"
+          className={[classes.card, "project-card"].join(" ")}
+        >
+          <ElenaJoy />
+          <CardActions>
+            <Button size="small" color="primary">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://github.com/apgomez85/Elena-Joy-Photography"
+              >
+                GitHub
+              </a>
+            </Button>
+            <Button size="small" color="primary">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://elena-joy-photography.netlify.com/"
+              >
+                Live
+              </a>
+            </Button>
+          </CardActions>
+        </Card>
+        <Card
+          raised="true"
+          className={[classes.card, "project-card"].join(" ")}
+        >
+          <Portfolio />
+          <CardActions>
+            <Button size="small" color="primary">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://github.com/apgomez85/3d-cube-portfolio"
+              >
+                GitHub
               </a>
             </Button>
           </CardActions>

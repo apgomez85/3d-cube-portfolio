@@ -92,6 +92,7 @@ body {
 }
 .cube__face--back {
   transform: rotateY(180deg) translateZ(50vw);
+  padding: 1rem 1rem 10rem 1rem;
 }
 .cube__face--left {
   transform: rotateY(-90deg) translateZ(50vw);
