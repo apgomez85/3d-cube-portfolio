@@ -104,10 +104,12 @@ body {
 .cube__face--top {
   transform: rotateX(90deg) translateZ(50vh);
   display: flex;
+  align-items: center;
 }
 .cube__face--bottom {
   transform: rotateX(-90deg) translateZ(50vh);
   display: flex;
+  align-items: center;
 }
 
 label {
