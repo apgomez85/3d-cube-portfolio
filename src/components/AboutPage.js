@@ -25,7 +25,7 @@ export default function AboutPage() {
         and bytes in between, but will gladly explore other avenues. Similar to
         the tech world, I am always in development.
       </p>
-      <div>
+      <div style={{ paddingBottom: "15rem" }}>
         <a
           target="_blank"
           rel="noopener noreferrer"

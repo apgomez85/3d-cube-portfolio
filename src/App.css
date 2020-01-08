@@ -108,7 +108,6 @@ body {
 .cube__face--bottom {
   transform: rotateX(-90deg) translateZ(50vh);
   display: flex;
-  padding-bottom: 10rem;
 }
 
 label {
