@@ -6,7 +6,7 @@ export default function ResumePage() {
       <a
         target="_blank"
         rel="noopener noreferrer"
-        href="https://drive.google.com/open?id=1XbmAJOBEgqbnIwgXXRB2FMUpD_yQ8fbR"
+        href="https://drive.google.com/file/d/1jaw72Q5VC_qDkSIWbOQraTDcEthNzfjd/view"
         download
       >
         <button
