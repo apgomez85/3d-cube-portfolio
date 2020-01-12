@@ -55,7 +55,8 @@ export default function MaxWidthDialog() {
               alt=""
               style={{
                 width: 60,
-                height: 40
+                height: 40,
+                marginBottom: 10
               }}
             />
             <br />

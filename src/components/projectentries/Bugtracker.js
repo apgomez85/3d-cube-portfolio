@@ -50,31 +50,35 @@ export default function MaxWidthDialog() {
         <DialogTitle id="max-width-dialog-title">Bugtracker</DialogTitle>
         <DialogContent>
           <DialogContentText>
-            <img src={require("../../images/icons/mongodb.svg")} alt="" />
-            <img
-              src={require("../../images/icons/expressjs.svg")}
-              alt=""
-              style={{
-                width: 75,
-                height: 50
-              }}
-            />
-            <img
-              src={require("../../images/icons/reactjs-icon.svg")}
-              alt=""
-              style={{
-                width: 60,
-                height: 40
-              }}
-            />
-            <img
-              src={require("../../images/icons/nodejs-icon.svg")}
-              alt=""
-              style={{
-                width: 60,
-                height: 40
-              }}
-            />
+            <div style={{ justifyItems: "center" }}>
+              <img src={require("../../images/icons/mongodb.svg")} alt="" />
+              <img
+                src={require("../../images/icons/expressjs.svg")}
+                alt=""
+                style={{
+                  width: 65,
+                  height: 50
+                }}
+              />
+              <img
+                src={require("../../images/icons/reactjs-icon.svg")}
+                alt=""
+                style={{
+                  width: 60,
+                  height: 40,
+                  paddingBottom: 10
+                }}
+              />
+              <img
+                src={require("../../images/icons/nodejs-icon.svg")}
+                alt=""
+                style={{
+                  width: 60,
+                  height: 40,
+                  paddingBottom: 10
+                }}
+              />
+            </div>
             <br />
             A fullstack app using the MERN stack. With this app you can register
             bugs to fix in your project. Assign them to a particular user and

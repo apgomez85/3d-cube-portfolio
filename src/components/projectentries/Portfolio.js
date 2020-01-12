@@ -62,7 +62,7 @@ export default function MaxWidthDialog() {
               src={require("../../images/icons/material-ui.png")}
               alt=""
               style={{
-                width: 75,
+                width: 50,
                 height: 50
               }}
             />

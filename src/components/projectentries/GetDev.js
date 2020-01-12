@@ -50,31 +50,35 @@ export default function MaxWidthDialog() {
         <DialogTitle id="max-width-dialog-title">Get-Dev</DialogTitle>
         <DialogContent>
           <DialogContentText>
-            <img src={require("../../images/icons/mongodb.svg")} alt="" />
-            <img
-              src={require("../../images/icons/expressjs.svg")}
-              alt=""
-              style={{
-                width: 75,
-                height: 50
-              }}
-            />
-            <img
-              src={require("../../images/icons/reactjs-icon.svg")}
-              alt=""
-              style={{
-                width: 60,
-                height: 40
-              }}
-            />
-            <img
-              src={require("../../images/icons/nodejs-icon.svg")}
-              alt=""
-              style={{
-                width: 60,
-                height: 40
-              }}
-            />
+            <div style={{ justifyItems: "center" }}>
+              <img src={require("../../images/icons/mongodb.svg")} alt="" />
+              <img
+                src={require("../../images/icons/expressjs.svg")}
+                alt=""
+                style={{
+                  width: 65,
+                  height: 50
+                }}
+              />
+              <img
+                src={require("../../images/icons/reactjs-icon.svg")}
+                alt=""
+                style={{
+                  width: 60,
+                  height: 40,
+                  paddingBottom: 10
+                }}
+              />
+              <img
+                src={require("../../images/icons/nodejs-icon.svg")}
+                alt=""
+                style={{
+                  width: 60,
+                  height: 40,
+                  paddingBottom: 10
+                }}
+              />
+            </div>
             <br />
             A fullstack app using the MERN stack. A social media app for web
             developers. Users are able to make an account that lists their

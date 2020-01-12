@@ -55,8 +55,19 @@ export default function MaxWidthDialog() {
               src={require("../../images/icons/css.svg")}
               alt=""
               style={{
-                width: 75,
-                height: 50
+                width: 45,
+                height: 45,
+                marginBottom: 3,
+                paddingBottom: 8
+              }}
+            />
+            <img
+              src={require("../../images/icons/javascript.png")}
+              alt=""
+              style={{
+                width: 45,
+                height: 45,
+                marginBottom: 8
               }}
             />
             <br />
