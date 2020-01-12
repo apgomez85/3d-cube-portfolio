@@ -162,4 +162,7 @@ label {
     padding-top: 200px;
     margin-bottom: 0;
   }
+  .about__paragraph {
+    font-size: 1rem;
+  }
 }
