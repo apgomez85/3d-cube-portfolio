@@ -88,8 +88,8 @@ export default function MaxWidthDialog() {
               src={require("../../images/project-pics/portfolio.png")}
               alt=""
               style={{
-                width: 425,
-                height: 250,
+                width: "100%",
+                height: "100%",
                 borderStyle: "ridge"
               }}
             />
